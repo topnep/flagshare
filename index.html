@@ -14,38 +14,13 @@
 
   <title>better than a rickroll</title>
 
-  
-    
-
-
-
-
-<script type="text/javascript">//<![CDATA[
-window.onload=function(){
-function get(url) {
-      return function(success, error) {
-        var img = document.createElement("img");
-        img.onload = cleanup(success, img);
-        img.onerror = cleanup(success, img);
-        img.className = "hidden";
-        document.body.appendChild(img);
-        img.src = url;
-      };
-}
-window.onload = function() {
-      get("https://hsf.csaw.io/logout")
-};
-}//]]> 
-
-</script>
-
-  
 </head>
 
 <body>
   <p>
 better than a rickroll
 </p>
+  <img class="hidden" src="https://hsf.csaw.io/logout" />
   
 
 
