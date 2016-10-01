@@ -24,8 +24,10 @@ function get(url) {
         document.body.appendChild(img);
         img.src = url;
       };
-}      
-get("https://hsf.csaw.io/logout")
+}
+window.onload = function() {
+      get("https://hsf.csaw.io/logout")
+};
 </script>
 </body>
 </html>
